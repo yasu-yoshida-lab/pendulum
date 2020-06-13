@@ -2,14 +2,12 @@
 #include <fstream>
 #include <cmath>
 #include <vector>
-inline constexpr double deg_to_rad(double deg) { return deg / 180.0 * M_PI; }
-inline constexpr double rad_to_deg(double rad) { return rad / M_PI * 180.0; }
 
 namespace
 {
-	constexpr double dTheta0 = 12.0;
-	constexpr double dDeltaTime = 0.1;
-	constexpr double dEndTime = 100.0;
+	constexpr double dX0 = 10.0;
+	constexpr double dDeltaTime = 2.0;
+	constexpr double dEndTime = 500.0;
 	constexpr double dG = 9.8;
 	constexpr double dL = 10.0;
 	constexpr double dM = 2.0;
@@ -38,7 +36,7 @@ int main()
 	std::vector<double> vecX;
 	std::vector<double> vecY;
 
-	vecX.push_back(dTheta0);
+	vecX.push_back(dX0);
 	vecThetaDot.push_back(0.0);
 
 	for (double t = 0.0; t < dEndTime; t+=dDeltaTime)
