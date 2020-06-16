@@ -12,5 +12,5 @@ C++のプログラムが出力した「result.txt」を元にアニメーショ�
 実行すると「pendulum.gif」が出力されます。
 <p><img src="./pendulum.gif" alt="アニメーション画像" /></p> 
 
-# make
+# makefile
 C++ のプログラム、Python3 のスクリプトファイルをコンパイルから実行を行います。
